@@ -1,0 +1,20 @@
+{% extends widget.get_base_template %}
+{% load staticfiles soc_extras %}
+
+{% block content %}
+
+{% load tz %}
+{% get_current_timezone as TIME_ZONE %}
+{{ TIME_ZONE }}
+
+{% if widget.number %}
+{% for num in widget.number|times %}
+<div class="col-xs-3">
+	<img src="{% static 'img/icon.png' %}">
+	<h5>{{ widget.title }}</h5>
+</div>
+{% endfor %}
+{% else %}
+<p>Žádné číslo nebylo zadáno.</p>
+{% endif %}
+{% endblock %}

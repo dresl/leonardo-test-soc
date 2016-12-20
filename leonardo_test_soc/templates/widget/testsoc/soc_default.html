@@ -1,0 +1,11 @@
+{% extends widget.get_base_template %}
+
+{% block content %}
+<h2>{{ widget.title }}</h2>
+
+{% if widget.number %}
+<p>{{ widget.number }} + 5 = {{ widget.number|add:"5" }}</p>
+{% else %}
+<p>Žádné číslo nebylo zadáno.</p>
+{% endif %}
+{% endblock %}

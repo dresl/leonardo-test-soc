@@ -1,0 +1,5 @@
+[run]
+source = leonardo_test_soc
+omit =
+    *migrations*
+    leonardo_test_soc/__init__.py

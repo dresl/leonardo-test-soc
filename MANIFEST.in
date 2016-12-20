@@ -1,0 +1,5 @@
+include MANIFEST.in
+include README.rst
+recursive-include leonardo_test_soc/static *
+recursive-include leonardo_test_soc/locale *
+recursive-include leonardo_test_soc/templates *
