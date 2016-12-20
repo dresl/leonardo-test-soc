@@ -2,11 +2,6 @@
 {% load staticfiles soc_extras %}
 
 {% block content %}
-
-{% load tz %}
-{% get_current_timezone as TIME_ZONE %}
-{{ TIME_ZONE }}
-
 {% if widget.number %}
 {% for num in widget.number|times %}
 <div class="col-xs-3">
